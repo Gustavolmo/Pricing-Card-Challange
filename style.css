@@ -69,12 +69,13 @@ body{
 
 #leftOne{
   background: hsl(179, 52%, 46%);
+  bottom: 0px;
   float: left;
 }
 
 #rightTwo{
   background: hsl(179, 52%, 49%);
-  right: 0px;
+  bottom: 0px;
   line-height: 20px;
   float: right;
 }
