@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: karla, sans-serif;
+  font-size: 16px;
+  background: hsl(204, 43%, 93%);
+}
+
+.fullCard{
+  position: flex;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 660px;
+  width: 72%;
+  height: 80%;
+  box-shadow: hsl(204, 43%, 80%) 0px 8px 16px;
+  border-radius: 8px;
+}
+
+.section{
+  display: block;
+  padding: 20px;
+  padding-left: 40px;
+  border-radius-top: 10px;
+}
+
+#topCard{
+  background: hsl(0, 0%, 98%);
+  height: 40%;
+  width: 100%;
+  line-height: 24px;
+  min-width: 300px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#topTitle{
+  color: hsl(179, 62%, 43%);
+}
+
+#topSubTitle{
+  color: hsl(71, 73%, 54%);
+  height: 16px;
+}
+
+#topText{
+  color: grey;
+  opacity: 0.6;
+}
+
+#leftOne, #rightTwo{
+  color: hsl(0, 0%, 96%);
+  height: 260px;
+  width: 50%;
+  bottom: 0%;
+  min-width: 300px;
+}
+
+#price{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#leftOne{
+  background: hsl(179, 52%, 46%);
+  float: left;
+  border-bottom-left-radius: 8px;
+}
+
+#rightTwo{
+  background: hsl(179, 52%, 49%);
+  right: 0px;
+  line-height: 20px;
+  float: right;
+  margin-bottom: 20px;
+  border-bottom-right-radius: 8px;
+}
+
+#whyUsText{
+ font-size: 0.9rem; 
+ opacity: 0.8;
+}
+
+#perMonth{
+  display: inline-block;
+  color: hsl(179, 62%, 80%);
+  vertical-align: 28%;
+  margin-left: 4px;
+}
+
+#fullAccess{
+ margin-top: 8px;
+}
+
+.button{
+  border: none;
+  background: hsl(71, 73%, 54%);
+  height: 50px;
+  width: 244px;
+  border-radius: 8px;
+  margin-top: 12px;
+  color: hsl(0, 0%, 98%);
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: hsl(179, 62%, 35%) 0px 4px 16px;
+}
+
+.button:hover {
+  background: hsl(71, 73%, 60%);
+  cursor: pointer
+}
+
+/* SMALL SCREEN BELOW */
+
+@media screen and (max-width: 850px){
+  #leftOne, #rightTwo, #topCard {
+    min-width: 320px;
+  }
+ 
+#topSubTitle{
+  height: 32px;
+}  
+  
+  #leftOne, #rightTwo{
+    width: 100%;
+    }
+  
+  #leftOne{
+    border-radius: 0px;
+  }
+  
+  #rightTwo{
+    float: left;
+    border-bottom-left-radius: 8px;
+  }
+}
